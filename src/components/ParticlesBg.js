@@ -3,10 +3,11 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import particlesConfig from "@/config/particles";
+import useParticleConfig from "@/hooks/useParticleConfig";
 
 export default function ParticlesBg() {
   const [init, setInit] = useState(false);
+  const config = useParticleConfig();
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -17,7 +18,7 @@ export default function ParticlesBg() {
   }, []);
 
   if (init) {
-    return <Particles id="tsparticles" options={particlesConfig} />;
+    return <Particles id="tsparticles" options={config} />;
   }
 
   return <></>;
