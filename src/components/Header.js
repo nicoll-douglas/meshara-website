@@ -22,7 +22,7 @@ export default function Header() {
       position={"fixed"}
       left={0}
       top={0}
-      width={"100vw"}
+      width={"100%"}
       style={{
         zIndex: 200,
         borderBottom: "1px solid grey",

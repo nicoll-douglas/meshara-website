@@ -1,6 +1,6 @@
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
-import { Box } from "@radix-ui/themes";
+import { Box, Flex } from "@radix-ui/themes";
 import ParticlesBg from "@/components/ParticlesBg";
 import { Poppins } from "next/font/google";
 import ThemeWrapper from "@/components/ThemeWrapper";
@@ -21,11 +21,12 @@ export default function RootLayout({ children }) {
         <ThemeWrapper>
           <ParticlesBg />
           <Header />
-          <Box
+          <Flex
             size={"4"}
             px={"16px"}
             my={"96px"}
             top={0}
+            left={0}
             style={{
               flexDirection: "column",
               alignItems: "center",
@@ -35,7 +36,7 @@ export default function RootLayout({ children }) {
             }}
           >
             {children}
-          </Box>
+          </Flex>
           <Footer />
         </ThemeWrapper>
       </body>

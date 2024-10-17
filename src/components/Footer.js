@@ -13,7 +13,7 @@ export default function Footer() {
     <Box
       px={"4"}
       py={"36px"}
-      width={"100vw"}
+      width={"100%"}
       position={"relative"}
       style={{
         zIndex: 100,
