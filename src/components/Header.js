@@ -1,67 +1,38 @@
-"use client";
-
-import {
-  Box,
-  Container,
-  Flex,
-  Link as RadixLink,
-  Heading,
-  IconButton,
-} from "@radix-ui/themes";
-import Link from "next/link";
-import { useContext } from "react";
-import { DarkModeContext } from "./ThemeWrapper";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { Box, Container, Flex } from "@radix-ui/themes";
+import InternalLink from "./common/InternaLink";
+import ToggleThemeBtn from "./ToggleThemeBtn";
+import Logo from "./Logo";
 
 export default function Header() {
-  const { darkMode, setDarkMode } = useContext(DarkModeContext);
-
   return (
     <Box
-      p={"16px"}
       position={"fixed"}
       left={0}
       top={0}
       width={"100%"}
       style={{
         zIndex: 200,
-        borderBottom: "1px solid grey",
+        borderBottom: "1px solid gray",
         backdropFilter: "blur(10px)",
       }}
+      asChild
     >
-      <Container size={"4"}>
-        <Flex align={"center"} justify={"between"}>
-          <RadixLink
-            style={{
-              color: darkMode ? "white" : "black",
-              textDecoration: "none",
-            }}
-            size={"6"}
-            asChild
-          >
-            <Link href={"/"}>
-              {
-                // can put a custom logo here instead
-                "Meshara"
-              }
-            </Link>
-          </RadixLink>
-          <Flex gap={"5"} align={"center"}>
-            <RadixLink asChild>
-              <Link href="/about">About Us</Link>
-            </RadixLink>
-            <RadixLink asChild>
-              <Link href="/investors">For Investors</Link>
-            </RadixLink>
-            <IconButton
-              onClick={() => setDarkMode(!darkMode)}
-              variant="surface"
-            >
-              {darkMode ? <SunIcon /> : <MoonIcon />}
-            </IconButton>
+      <header>
+        <Container size={"4"} p={"4"}>
+          <Flex align={"center"} justify={"between"}>
+            <Logo />
+            <Flex>
+              <Flex gap={"5"} align={"center"} asChild>
+                <nav>
+                  <InternalLink href="/about">About Us</InternalLink>
+                  <InternalLink href="/investors">For Investors</InternalLink>
+                </nav>
+              </Flex>
+              <ToggleThemeBtn ml="5" />
+            </Flex>
           </Flex>
-        </Flex>
-      </Container>
+        </Container>
+      </header>
     </Box>
   );
 }

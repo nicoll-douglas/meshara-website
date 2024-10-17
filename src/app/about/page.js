@@ -5,6 +5,7 @@ import { opacity } from "@/constants/transition";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
+import ButtonLink from "@/components/common/ButtonLink";
 
 export default function About() {
   return (
@@ -13,7 +14,6 @@ export default function About() {
         direction={"column"}
         align={"center"}
         justify={"center"}
-        mt={"62px"}
         maxWidth={"600px"}
         mx={"auto"}
         gap={"4"}
@@ -37,17 +37,7 @@ export default function About() {
           Our mission is to empower individuals and businesses by bringing
           reliable, affordable financial access where it&apos;s needed most.
         </Text>
-        <Button
-          size={"4"}
-          mt={"4"}
-          variant="surface"
-          highContrast={true}
-          asChild
-        >
-          <Link href={"/investors"}>
-            For Investors <ArrowRightIcon />
-          </Link>
-        </Button>
+        <ButtonLink href={"/investors"}>For Investors</ButtonLink>
       </Flex>
     </motion.div>
   );

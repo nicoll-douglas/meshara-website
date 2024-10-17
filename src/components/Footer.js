@@ -7,6 +7,7 @@ import {
   Text,
 } from "@radix-ui/themes";
 import Link from "next/link";
+import InternalLink from "./common/InternaLink";
 
 export default function Footer() {
   return (
@@ -14,7 +15,6 @@ export default function Footer() {
       px={"4"}
       py={"36px"}
       width={"100%"}
-      position={"relative"}
       style={{
         zIndex: 100,
         borderTop: "1px solid grey",

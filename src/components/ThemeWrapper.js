@@ -1,33 +1,19 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import { useState, createContext, useEffect, useMemo } from "react";
+import { createContext } from "react";
 import { Theme } from "@radix-ui/themes";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 export const DarkModeContext = createContext();
 
 export default function ThemeWrapper({ children }) {
-  const stateInitial = true;
-  const [darkMode, setDarkMode] = useState(stateInitial);
-
-  useEffect(() => {
-    const trueInitial = localStorage.getItem("darkMode");
-    if (trueInitial) {
-      setDarkMode(JSON.parse(trueInitial));
-    } else {
-      setDarkMode(stateInitial);
-      localStorage.setItem("darkMode", JSON.stringify(stateInitial));
-    }
-  }, []);
+  const [darkMode, setDarkMode] = useLocalStorage("darkMode", true);
 
   return (
     <DarkModeContext.Provider
       value={{
         darkMode,
-        setDarkMode: (value) => {
-          setDarkMode(value);
-          localStorage.setItem("darkMode", JSON.stringify(value));
-        },
+        setDarkMode,
       }}
     >
       <Theme

@@ -2,10 +2,11 @@
 
 import { Button, Flex, Heading, Text } from "@radix-ui/themes";
 import { motion } from "framer-motion";
-import NewsUpdate from "@/components/NewsUpdate";
+import NewsUpdate from "@/components/common/NewsUpdate";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { opacity } from "@/constants/transition";
 import Link from "next/link";
+import ButtonLink from "@/components/common/ButtonLink";
 
 export default function Home() {
   return (
@@ -19,27 +20,18 @@ export default function Home() {
         m={"auto"}
       >
         <Flex
-          mt={"28dvh"}
-          mb={"164px"}
+          mt={"calc(50dvh - 234px)"}
+          mb={"170px"}
           align="center"
           justify={"center"}
           direction={"column"}
           gap={"2"}
         >
-          <Heading
-            // style={{ fontSize: "96px", lineHeight: 1 }}
-            size={"9"}
-          >
-            Meshara
-          </Heading>
+          <Heading size={"9"}>Meshara</Heading>
           <Text size={"6"} align={"center"} mb={"4"}>
             Financial inclusion by connection.
           </Text>
-          <Button size={"4"} variant="surface" highContrast={true} asChild>
-            <Link href={"/about"}>
-              About Us <ArrowRightIcon />
-            </Link>
-          </Button>
+          <ButtonLink href={"/about"}>About Us</ButtonLink>
         </Flex>
         <Heading size={"7"} as="h2" mb={"4"}>
           Latest News
