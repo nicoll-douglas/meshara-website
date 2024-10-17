@@ -1,6 +1,6 @@
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
-import { Container, Box } from "@radix-ui/themes";
+import { Box } from "@radix-ui/themes";
 import ParticlesBg from "@/components/ParticlesBg";
 import { Poppins } from "next/font/google";
 import ThemeWrapper from "@/components/ThemeWrapper";
@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
               alignItems: "center",
               justifyContent: "center",
               zIndex: 100,
+              flex: 1,
             }}
           >
             {children}
