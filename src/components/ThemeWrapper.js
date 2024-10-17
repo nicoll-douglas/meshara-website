@@ -7,7 +7,7 @@ import { Theme } from "@radix-ui/themes";
 export const DarkModeContext = createContext();
 
 export default function ThemeWrapper({ children }) {
-  const stateInitial = false;
+  const stateInitial = true;
   const [darkMode, setDarkMode] = useState(stateInitial);
 
   useEffect(() => {

@@ -1,10 +1,11 @@
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
-import { Container } from "@radix-ui/themes";
+import { Container, Box } from "@radix-ui/themes";
 import ParticlesBg from "@/components/ParticlesBg";
 import { Poppins } from "next/font/google";
 import ThemeWrapper from "@/components/ThemeWrapper";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const kanit = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
         <ThemeWrapper>
           <ParticlesBg />
           <Header />
-          <Container
+          <Box
             size={"4"}
             px={"16px"}
             my={"96px"}
@@ -33,7 +34,8 @@ export default function RootLayout({ children }) {
             }}
           >
             {children}
-          </Container>
+          </Box>
+          <Footer />
         </ThemeWrapper>
       </body>
     </html>

@@ -21,17 +21,17 @@ export default function useParticleConfig() {
             mode: "push",
           },
           onHover: {
-            enable: false,
+            enable: true,
             mode: "repulse",
           },
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 5,
           },
           repulse: {
-            distance: 200,
-            duration: 0.4,
+            distance: 80,
+            duration: 0.5,
           },
         },
       },
@@ -60,7 +60,7 @@ export default function useParticleConfig() {
           density: {
             enable: true,
           },
-          value: 250,
+          value: 150,
         },
         opacity: {
           value: 0.5,

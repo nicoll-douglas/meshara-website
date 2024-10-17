@@ -24,9 +24,9 @@ export default function Header() {
       top={0}
       width={"100vw"}
       style={{
-        background: darkMode ? "black" : "white",
         zIndex: 200,
-        borderBottom: `1px solid ${darkMode ? "white" : "black"}`,
+        borderBottom: "1px solid grey",
+        backdropFilter: "blur(10px)",
       }}
     >
       <Container size={"4"}>
@@ -37,9 +37,8 @@ export default function Header() {
               <Heading size={"6"}>Meshara</Heading>
             }
           </Link>
-          <Flex gap={"4"} align={"center"}>
-            <RadixLink href="/news">News</RadixLink>
-            <RadixLink href="/about">About</RadixLink>
+          <Flex gap={"5"} align={"center"}>
+            <RadixLink href="/about">About Us</RadixLink>
             <RadixLink href="/for-investors">For Investors</RadixLink>
             <IconButton
               onClick={() => setDarkMode(!darkMode)}

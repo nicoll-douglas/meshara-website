@@ -1,95 +1,79 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import {
+  Box,
+  Button,
+  Card,
+  Container,
+  Flex,
+  Heading,
+  Text,
+} from "@radix-ui/themes";
+import { motion } from "framer-motion";
+import NewsUpdate from "@/components/NewsUpdate";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1, delay: 0.4 }}
+    >
+      <Flex
+        align={"center"}
+        justify={"center"}
+        style={{ flex: 1 }}
+        direction={"column"}
+        maxWidth={"fit-content"}
+        m={"auto"}
+      >
+        <Flex
+          mt={"28dvh"}
+          mb={"164px"}
+          align="center"
+          justify={"center"}
+          direction={"column"}
+          gap={"2"}
+        >
+          <Heading
+            // style={{ fontSize: "96px", lineHeight: 1 }}
+            size={"9"}
           >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            Meshara
+          </Heading>
+          <Text size={"7"} align={"center"} mb={"4"}>
+            Financial inclusion by connection.
+          </Text>
+          <Button size={"4"} variant="surface" highContrast={true} as="a">
+            About Us <ArrowRightIcon />
+          </Button>
+        </Flex>
+        <Heading size={"7"} as="h2" mb={"4"}>
+          Latest News
+        </Heading>
+        <Flex direction={"column"} gap={"4"} mb={"32px"}>
+          <NewsUpdate
+            title={"Meshara revealed at Silicon Alps EBSCON4PIONEERS 2024"}
+            text={
+              "We're ecstatic to announce our participation at the Silicon Alps EBSCON4PIONEERS 2024 event. We will be  showcasing our latest developments in the field of financial inclusion and mesh network technology."
+            }
+            date={"02.10.2024"}
+            author="Adrian Davies"
+            authorRole={"Founder"}
+            avatar="https://placebear.com/200/200"
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <NewsUpdate
+            title={"Duis aute irure dolor in reprehenderit in voluptate"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+            date={"21.09.2024"}
+            author="Lily Rauch"
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </Flex>
+      </Flex>
+    </motion.div>
   );
 }
