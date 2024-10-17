@@ -6,7 +6,7 @@ import {
   FileTextIcon,
 } from "@radix-ui/react-icons";
 import PageTransition from "@/components/common/PageTransition";
-import email from "@/constants/email";
+import email from "@/data/email";
 
 function ListSection({ heading, children }) {
   return (
@@ -48,7 +48,11 @@ export default function Investors() {
               style={{ display: "flex", alignItems: "center", gap: "8px" }}
               size={"5"}
             >
-              <EnvelopeClosedIcon width={"20px"} height={"20px"} />
+              <EnvelopeClosedIcon
+                width={"20px"}
+                height={"20px"}
+                aria-hidden="true"
+              />
               {email}
             </Text>
           </li>
@@ -59,7 +63,7 @@ export default function Investors() {
               href=" https://calendly.com/meshara-investor"
               style={{ display: "flex", alignItems: "center", gap: "8px" }}
             >
-              <CalendarIcon width={"20px"} height={"20px"} />
+              <CalendarIcon width={"20px"} height={"20px"} aria-hidden="true" />
               Schedule a meeting
             </RadixLink>
           </li>
@@ -74,7 +78,11 @@ export default function Investors() {
               asChild
             >
               <Link href={"/path/to/pitch-deck.pdf"}>
-                <FileTextIcon width={"20px"} height={"20px"} />
+                <FileTextIcon
+                  width={"20px"}
+                  height={"20px"}
+                  aria-hidden="true"
+                />
                 Our Pitch Deck
               </Link>
             </RadixLink>

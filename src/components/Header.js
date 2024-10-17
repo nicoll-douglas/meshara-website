@@ -3,6 +3,7 @@ import InternalLink from "./common/InternaLink";
 import ToggleThemeBtn from "./ToggleThemeBtn";
 import Logo from "./Logo";
 import MobileDropdown from "./MobileDropdown";
+import config from "@/config";
 
 export default function Header() {
   return (
@@ -26,9 +27,12 @@ export default function Header() {
               <Flex gap={"5"} align={"center"} asChild id="desktop-nav">
                 <nav>
                   <InternalLink href="/about">About Us</InternalLink>
-                  <InternalLink href={"/how-it-works"}>
-                    How It Works
-                  </InternalLink>
+                  {config.placeholderContent && (
+                    <InternalLink href={"/how-it-works"}>
+                      How It Works
+                    </InternalLink>
+                  )}
+                  <InternalLink href={"/our-team"}>Our Team</InternalLink>
                   <InternalLink href="/investors">For Investors</InternalLink>
                 </nav>
               </Flex>
