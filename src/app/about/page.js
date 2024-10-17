@@ -1,27 +1,12 @@
-"use client";
-
-import { Flex, Heading, Text, Button } from "@radix-ui/themes";
-import { opacity } from "@/constants/transition";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { Flex, Heading, Text } from "@radix-ui/themes";
 import ButtonLink from "@/components/common/ButtonLink";
+import PageTransition from "@/components/common/PageTransition";
+import TextSection from "@/components/common/TextSection";
 
 export default function About() {
   return (
-    <motion.div {...opacity}>
-      <Flex
-        direction={"column"}
-        align={"center"}
-        justify={"center"}
-        maxWidth={"600px"}
-        mx={"auto"}
-        gap={"4"}
-        style={{ flex: 1 }}
-      >
-        <Heading size={"9"} align={"center"} mb={"4"}>
-          About Us
-        </Heading>
+    <PageTransition>
+      <TextSection heading={"About Us"}>
         <Text size={"4"} align={"center"}>
           Meshara provides secure, low-cost financial transactions for
           underserved communities using a decentralized, off-grid LoRa mesh
@@ -37,8 +22,10 @@ export default function About() {
           Our mission is to empower individuals and businesses by bringing
           reliable, affordable financial access where it&apos;s needed most.
         </Text>
-        <ButtonLink href={"/investors"}>For Investors</ButtonLink>
-      </Flex>
-    </motion.div>
+        <ButtonLink mt="4" href={"/how-it-works"}>
+          How It Works
+        </ButtonLink>
+      </TextSection>
+    </PageTransition>
   );
 }

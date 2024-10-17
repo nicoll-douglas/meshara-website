@@ -25,6 +25,9 @@ export default function Header() {
               <Flex gap={"5"} align={"center"} asChild>
                 <nav>
                   <InternalLink href="/about">About Us</InternalLink>
+                  <InternalLink href={"/how-it-works"}>
+                    How It Works
+                  </InternalLink>
                   <InternalLink href="/investors">For Investors</InternalLink>
                 </nav>
               </Flex>

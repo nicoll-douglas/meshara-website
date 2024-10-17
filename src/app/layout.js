@@ -22,21 +22,18 @@ export default function RootLayout({ children }) {
           <ParticlesBg />
           <Header />
           <Flex
-            size={"4"}
+            maxWidth={"768px"}
             px={"4"}
             mt="65px"
-            top={0}
             py={"64px"}
-            left={0}
-            style={{
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              zIndex: 100,
-              flex: 1,
-            }}
+            mx={"auto"}
+            direction={"column"}
+            align={"center"}
+            justify={"center"}
+            style={{ flex: 1 }}
+            asChild
           >
-            {children}
+            <main>{children}</main>
           </Flex>
           <Footer />
         </ThemeWrapper>

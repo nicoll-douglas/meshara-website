@@ -13,7 +13,8 @@ button {
 }
 
 .radix-themes {
-  --default-font-family: "__Poppins_c0d4f1", "__Poppins_Fallback_c0d4f1";
+  --default-font-family: "__Poppins_c0d4f1", "__Poppins_Fallback_c0d4f1",
+    system-ui;
 }
 
 #tsparticles {

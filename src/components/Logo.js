@@ -8,6 +8,7 @@ export default function Logo() {
   const { darkMode } = useDarkMode();
 
   return (
+    // can change to custom logo
     <Heading asChild>
       <InternalLink href={"/"} style={{ color: darkMode ? "white" : "black" }}>
         Meshara

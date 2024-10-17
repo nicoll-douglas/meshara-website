@@ -1,16 +1,11 @@
-"use client";
-
-import { Button, Flex, Heading, Text } from "@radix-ui/themes";
-import { motion } from "framer-motion";
+import { Flex, Heading, Text } from "@radix-ui/themes";
 import NewsUpdate from "@/components/common/NewsUpdate";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { opacity } from "@/constants/transition";
-import Link from "next/link";
 import ButtonLink from "@/components/common/ButtonLink";
+import PageTransition from "@/components/common/PageTransition";
 
 export default function Home() {
   return (
-    <motion.div {...opacity}>
+    <PageTransition>
       <Flex
         align={"center"}
         justify={"center"}
@@ -28,10 +23,12 @@ export default function Home() {
           gap={"2"}
         >
           <Heading size={"9"}>Meshara</Heading>
-          <Text size={"6"} align={"center"} mb={"4"}>
+          <Text size={"6"} align={"center"}>
             Financial inclusion by connection.
           </Text>
-          <ButtonLink href={"/about"}>About Us</ButtonLink>
+          <ButtonLink href={"/about"} mt="4">
+            About Us
+          </ButtonLink>
         </Flex>
         <Heading size={"7"} as="h2" mb={"4"}>
           Latest News
@@ -57,6 +54,6 @@ export default function Home() {
           />
         </Flex>
       </Flex>
-    </motion.div>
+    </PageTransition>
   );
 }
