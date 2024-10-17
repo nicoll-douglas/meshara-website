@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <motion.div {...opacity}>
       <Flex align={"center"} justify={"center"}>
-        <Heading size={"9"} align={"center"}>
+        <Heading size={"7"} align={"center"}>
           404 | Not Found
         </Heading>
       </Flex>

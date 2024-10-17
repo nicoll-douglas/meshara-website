@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import NewsUpdate from "@/components/NewsUpdate";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { opacity } from "@/constants/transition";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,8 +35,10 @@ export default function Home() {
           <Text size={"6"} align={"center"} mb={"4"}>
             Financial inclusion by connection.
           </Text>
-          <Button size={"4"} variant="surface" highContrast={true} as="a">
-            About Us <ArrowRightIcon />
+          <Button size={"4"} variant="surface" highContrast={true} asChild>
+            <Link href={"/about"}>
+              About Us <ArrowRightIcon />
+            </Link>
           </Button>
         </Flex>
         <Heading size={"7"} as="h2" mb={"4"}>

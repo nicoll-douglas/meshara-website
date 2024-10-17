@@ -32,14 +32,19 @@ export default function Header() {
       <Container size={"4"}>
         <Flex align={"center"} justify={"between"}>
           <RadixLink
-            style={{ color: darkMode ? "white" : "black" }}
+            style={{
+              color: darkMode ? "white" : "black",
+              textDecoration: "none",
+            }}
             size={"6"}
             asChild
           >
-            {
-              // can put a custom logo here instead
-              <Link href={"/"}>Meshara</Link>
-            }
+            <Link href={"/"}>
+              {
+                // can put a custom logo here instead
+                "Meshara"
+              }
+            </Link>
           </RadixLink>
           <Flex gap={"5"} align={"center"}>
             <RadixLink asChild>
