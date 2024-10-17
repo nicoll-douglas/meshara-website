@@ -9,4 +9,6 @@
 
 ## Images
 
-![Meshara Homepage](proj/meshara-dark.gif)
+![Meshara Dark](proj/meshara-dark.gif)
+
+![Meshara Light](proj/meshara-light.gif)
