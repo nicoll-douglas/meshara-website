@@ -60,7 +60,7 @@ export default function useParticleConfig() {
           density: {
             enable: true,
           },
-          value: 100,
+          value: 150,
         },
         opacity: {
           value: 0.5,
