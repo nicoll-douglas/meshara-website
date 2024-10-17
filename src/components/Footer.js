@@ -1,4 +1,12 @@
-import { Box, Container, Flex, Heading, Link, Text } from "@radix-ui/themes";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Link as RadixLink,
+  Text,
+} from "@radix-ui/themes";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -24,8 +32,12 @@ export default function Footer() {
             <Heading size={"4"} as="h2">
               Links
             </Heading>
-            <Link href="/about">About Us</Link>
-            <Link href="/for-investors">For Investors</Link>
+            <RadixLink asChild>
+              <Link href="/about">About Us</Link>
+            </RadixLink>
+            <RadixLink asChild>
+              <Link href="/investors">For Investors</Link>
+            </RadixLink>
           </Flex>
           © 2024 Meshara. All rights reserved.
           <Flex direction={"column"} gap={"2"} as="h2">

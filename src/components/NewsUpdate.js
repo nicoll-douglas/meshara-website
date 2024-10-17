@@ -47,7 +47,7 @@ export default function NewsUpdate({
         </Flex>
         <Text size={"3"}>{date}</Text>
       </Flex>
-      <Flex direction={"column"} gap={"2"}>
+      <Flex direction={"column"} gap={"2"} align={"start"}>
         <Heading size={"5"} as="h3">
           {title}
         </Heading>
