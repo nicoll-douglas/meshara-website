@@ -42,7 +42,7 @@ export default function Header() {
             <RadixLink href="/about">About</RadixLink>
             <RadixLink href="/for-investors">For Investors</RadixLink>
             <IconButton
-              onClick={() => setDarkMode((v) => !v)}
+              onClick={() => setDarkMode(!darkMode)}
               variant="surface"
             >
               {darkMode ? <SunIcon /> : <MoonIcon />}

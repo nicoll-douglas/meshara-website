@@ -1,25 +1,35 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext, useEffect, useMemo } from "react";
 import { Theme } from "@radix-ui/themes";
 
 export const DarkModeContext = createContext();
 
 export default function ThemeWrapper({ children }) {
-  const [darkMode, setDarkMode] = useState(false);
+  const stateInitial = false;
+  const [darkMode, setDarkMode] = useState(stateInitial);
 
   useEffect(() => {
-    if ("darkMode" in localStorage) {
-      setDarkMode(JSON.parse(localStorage.getItem("darkMode")));
+    const trueInitial = localStorage.getItem("darkMode");
+    if (trueInitial) {
+      setDarkMode(JSON.parse(trueInitial));
+    } else {
+      setDarkMode(stateInitial);
+      localStorage.setItem("darkMode", JSON.stringify(stateInitial));
     }
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
-
   return (
-    <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
+    <DarkModeContext.Provider
+      value={{
+        darkMode,
+        setDarkMode: (value) => {
+          setDarkMode(value);
+          localStorage.setItem("darkMode", JSON.stringify(value));
+        },
+      }}
+    >
       <Theme
         style={{ display: "flex", flexDirection: "column" }}
         hasBackground={false}
