@@ -17,7 +17,6 @@ export default function Investors() {
         direction={"column"}
         align={"center"}
         justify={"center"}
-        mt={"62px"}
         maxWidth={"600px"}
         mx={"auto"}
         gap={"4"}

@@ -1,7 +1,5 @@
 body {
-  overflow-x: hidden;
   overflow-y: scroll;
-  width: 100%;
 }
 
 * {
@@ -10,17 +8,12 @@ body {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 button {
   cursor: pointer !important;
 }
 
 .radix-themes {
-  --default-font-family: "__Poppins_c0d4f1";
+  --default-font-family: "__Poppins_c0d4f1", "__Poppins_Fallback_c0d4f1";
 }
 
 #tsparticles {
@@ -29,5 +22,4 @@ button {
   left: 0;
   width: 100dvw;
   height: 100dvh;
-  z-index: 1;
 }

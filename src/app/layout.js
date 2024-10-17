@@ -1,6 +1,6 @@
 import "@radix-ui/themes/styles.css";
-import "./globals.css";
-import { Box, Flex } from "@radix-ui/themes";
+import "./styles.css";
+import { Flex } from "@radix-ui/themes";
 import ParticlesBg from "@/components/ParticlesBg";
 import { Poppins } from "next/font/google";
 import ThemeWrapper from "@/components/ThemeWrapper";
@@ -23,9 +23,10 @@ export default function RootLayout({ children }) {
           <Header />
           <Flex
             size={"4"}
-            px={"16px"}
-            my={"96px"}
+            px={"4"}
+            mt="65px"
             top={0}
+            py={"64px"}
             left={0}
             style={{
               flexDirection: "column",
