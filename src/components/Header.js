@@ -2,6 +2,7 @@ import { Box, Container, Flex } from "@radix-ui/themes";
 import InternalLink from "./common/InternaLink";
 import ToggleThemeBtn from "./ToggleThemeBtn";
 import Logo from "./Logo";
+import MobileDropdown from "./MobileDropdown";
 
 export default function Header() {
   return (
@@ -21,8 +22,8 @@ export default function Header() {
         <Container size={"4"} p={"4"}>
           <Flex align={"center"} justify={"between"}>
             <Logo />
-            <Flex>
-              <Flex gap={"5"} align={"center"} asChild>
+            <Flex gap={"2"}>
+              <Flex gap={"5"} align={"center"} asChild id="desktop-nav">
                 <nav>
                   <InternalLink href="/about">About Us</InternalLink>
                   <InternalLink href={"/how-it-works"}>
@@ -31,7 +32,8 @@ export default function Header() {
                   <InternalLink href="/investors">For Investors</InternalLink>
                 </nav>
               </Flex>
-              <ToggleThemeBtn ml="5" />
+              <ToggleThemeBtn ml="3" />
+              <MobileDropdown />
             </Flex>
           </Flex>
         </Container>

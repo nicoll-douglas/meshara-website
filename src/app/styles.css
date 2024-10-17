@@ -24,3 +24,13 @@ button {
   width: 100dvw;
   height: 100dvh;
 }
+
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-dropdown {
+    display: flex !important;
+  }
+}

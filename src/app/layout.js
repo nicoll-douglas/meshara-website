@@ -7,7 +7,7 @@ import ThemeWrapper from "@/components/ThemeWrapper";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const kanit = Poppins({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Meshara",
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={kanit.className}>
+      <body className={poppins.className}>
         <ThemeWrapper>
           <ParticlesBg />
           <Header />
