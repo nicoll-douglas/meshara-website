@@ -1,6 +1,7 @@
 import { Card, Flex, Avatar, Text, Badge } from "@radix-ui/themes";
 import { Link } from "@radix-ui/themes";
 
+// prop type is Profile, see /src/data/profiles.js
 export default function ProfileCard({ profile }) {
   return (
     <Card
@@ -25,7 +26,7 @@ export default function ProfileCard({ profile }) {
           aria-label={profile.name}
           src={profile.avatar}
           fallback={
-            // gets first 2 initials of author name as a fallback
+            // gets first 2 initials of profile name as a fallback
             profile.name
               .split(" ")
               .slice(0, 2)
@@ -35,14 +36,11 @@ export default function ProfileCard({ profile }) {
           mr={"2"}
         />
         <Text size={"6"}>{profile.name}</Text>
-        {
-          // optional prop, e.g Founder, Sponsor etc
-          profile.role && (
-            <Badge mt={"1"} size={"3"} highContrast={true}>
-              {profile.role}
-            </Badge>
-          )
-        }
+        {profile.role && (
+          <Badge mt={"1"} size={"3"} highContrast={true}>
+            {profile.role}
+          </Badge>
+        )}
         <Text align={"center"} mt={"3"}>
           {profile.bio}
         </Text>

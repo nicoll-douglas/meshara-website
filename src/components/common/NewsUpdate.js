@@ -10,13 +10,11 @@ import {
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 export default function NewsUpdate({
-  title,
-  author,
-  authorRole,
-  date,
-  link,
-  text,
-  avatar,
+  title, // title
+  text, // main text
+  date, // date
+  link, // link to an article (optional)
+  profile, // prop type is Profile, see /src/data/profiles.js
 }) {
   return (
     <Card style={{ maxWidth: "640px" }} size={"2"} as="section">
@@ -24,15 +22,12 @@ export default function NewsUpdate({
         <header>
           <Flex gap={"1"} align={"center"}>
             <Avatar
-              aria-label={author}
-              src={
-                // link to a local or external file, preferrably square
-                avatar
-              }
+              aria-label={profile.name}
+              src={profile.avatar}
               fallback={
                 // gets first 2 initials of author name as a fallback
-                author
-                  ?.split(" ")
+                profile.name
+                  .split(" ")
                   .slice(0, 2)
                   .map((n) => n[0])
                   .join("")
@@ -40,11 +35,10 @@ export default function NewsUpdate({
               mr={"2"}
             />
             <Flex direction={"column"} align={"start"}>
-              <Text>{author}</Text>
-              {
-                // optional prop, e.g Founder, Sponsor etc
-                authorRole && <Badge highContrast={true}>{authorRole}</Badge>
-              }
+              <Text>{profile.name}</Text>
+              {profile.role && (
+                <Badge highContrast={true}>{profile.role}</Badge>
+              )}
             </Flex>
           </Flex>
           <Text size={"3"}>{date}</Text>
@@ -54,24 +48,16 @@ export default function NewsUpdate({
         <Heading size={"5"} as="h3">
           {title}
         </Heading>
-        <Text>
-          {
-            // main text
-            text
-          }
-        </Text>
-        {
-          // optional prop, link to an article
-          link && (
-            <Link
-              href={link}
-              style={{ display: "flex", alignItems: "center", gap: 4 }}
-              target="_blank"
-            >
-              Read more <ExternalLinkIcon />
-            </Link>
-          )
-        }
+        <Text>{text}</Text>
+        {link && (
+          <Link
+            href={link}
+            style={{ display: "flex", alignItems: "center", gap: 4 }}
+            target="_blank"
+          >
+            Read more <ExternalLinkIcon aria-hidden="true" />
+          </Link>
+        )}
       </Flex>
     </Card>
   );

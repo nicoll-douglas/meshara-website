@@ -51,9 +51,8 @@ export default function Home() {
                       "We're ecstatic to announce our participation at the Silicon Alps EBSCON4PIONEERS 2024 event. We will be  showcasing our latest developments in the field of financial inclusion and mesh network technology."
                     }
                     date={"02.10.2024"}
-                    author={founder.name}
-                    authorRole={founder.role}
-                    avatar={founder.avatar}
+                    link="https://example.com/read-more"
+                    profile={founder}
                   />
                 </li>
                 <li>
@@ -65,9 +64,7 @@ export default function Home() {
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     }
                     date={"25.09.2024"}
-                    author={profile2.name}
-                    authorRole={profile3.role}
-                    avatar={profile2.avatar}
+                    profile={profile2}
                   />
                 </li>
                 <li>
@@ -79,9 +76,7 @@ export default function Home() {
                       "Sed orci duis senectus fames magna gravida; tempor venenatis. Adipiscing taciti vehicula montes; nulla taciti class. Metus vehicula odio laoreet volutpat felis fringilla hendrerit morbi. Sed donec velit diam class fringilla rutrum per velit."
                     }
                     date="18.09.24"
-                    author={profile3.name}
-                    authorRole={profile3.role}
-                    avatar={profile3.avatar}
+                    profile={profile3}
                   />
                 </li>
               </ul>

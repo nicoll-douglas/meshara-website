@@ -9,26 +9,27 @@ class Profile {
     this.name = name; // String
     this.role = role; // String
     this.bio = bio; // String
-    this.avatar = avatar; // String (link)
+    this.avatar = avatar; // String (link to an external or local image file)
     this.socials = socials; // array of Social
   }
 }
 
 class Social {
   constructor(link, logo, name) {
-    this.link = link; // String (link)
+    this.link = link; // String (link to social media)
     this.Logo = logo; // icon component
-    this.name = name; // String (accessible name)
+    this.name = name; // String (accessible name for the link)
   }
 }
 
+// reusable profile data to use in components
 const profiles = {
   0: new Profile(
-    "Adrian Davies",
-    "Founder",
-    "Risus elit eros commodo; curabitur vivamus inceptos duis risus. Etiam mi proin litora gravida sed in tortor sapien est. Scelerisque pulvinar nascetur per amet sodales egestas.",
-    null,
-    [new Social("https://www.linkedin.com", LinkedInLogoIcon, "LinkedIn")]
+    "Adrian Davies", // name
+    "Founder", // role
+    "Risus elit eros commodo; curabitur vivamus inceptos duis risus. Etiam mi proin litora gravida sed in tortor sapien est. Scelerisque pulvinar nascetur per amet sodales egestas.", // bio
+    null, // avatar
+    [new Social("https://www.linkedin.com", LinkedInLogoIcon, "LinkedIn")] // socials
   ),
   1: new Profile(
     "John Doe",
