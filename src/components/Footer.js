@@ -1,12 +1,12 @@
 import { Box, Container, Flex, Heading, Text } from "@radix-ui/themes";
 import InternalLink from "./common/InternaLink";
-import email from "@/constants/email";
+import email from "@/data/email";
 
 function ListSection({ heading, children }) {
   return (
     <Flex direction={"column"} gap={"2"} asChild>
-      <section aria-labelledby="footer-links">
-        <Heading size={"4"} as="h2" id={`footer-${heading}`}>
+      <section aria-label={heading}>
+        <Heading size={"4"} as="h2">
           {heading}
         </Heading>
         <Flex direction={"column"} gap={"2"} asChild>
@@ -44,6 +44,9 @@ export default function Footer() {
               </li>
               <li>
                 <InternalLink href={"/how-it-works"}>How It Works</InternalLink>
+              </li>
+              <li>
+                <InternalLink href={"/team"}>Our Team</InternalLink>
               </li>
               <li>
                 <InternalLink href={"/investors"}>For Investors</InternalLink>

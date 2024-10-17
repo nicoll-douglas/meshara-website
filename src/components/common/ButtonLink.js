@@ -7,7 +7,7 @@ export default function ButtonLink({ children, href, ...props }) {
     <Button size={"4"} variant="surface" highContrast={true} asChild {...props}>
       <Link href={href}>
         {children}
-        <ArrowRightIcon />
+        <ArrowRightIcon aria-hidden="true" />
       </Link>
     </Button>
   );

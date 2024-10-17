@@ -10,8 +10,9 @@ export default function MobileDropdown() {
           variant="surface"
           id="mobile-dropdown"
           style={{ display: "none" }}
+          aria-label="Menu"
         >
-          <HamburgerMenuIcon />
+          <HamburgerMenuIcon aria-hidden={true} />
         </IconButton>
       </DropdownMenu.Trigger>
       <DropdownMenu.Content>
@@ -21,6 +22,9 @@ export default function MobileDropdown() {
           </DropdownMenu.Item>
           <DropdownMenu.Item>
             <InternalLink href="/how-it-works">How It Works</InternalLink>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item>
+            <InternalLink href="/team">Our Team</InternalLink>
           </DropdownMenu.Item>
           <DropdownMenu.Item>
             <InternalLink href={"/investors"}>For Investors</InternalLink>

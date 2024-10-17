@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@radix-ui/themes";
+import { Text } from "@radix-ui/themes";
 import ButtonLink from "@/components/common/ButtonLink";
 import PageTransition from "@/components/common/PageTransition";
 import TextSection from "@/components/common/TextSection";

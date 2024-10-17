@@ -39,7 +39,7 @@ export default function Investors() {
         gap={"9"}
         style={{ flex: 1 }}
       >
-        <Heading size={"9"} align={"center"}>
+        <Heading size={"9"} align={"center"} className="main-heading">
           For Investors
         </Heading>
         <ListSection heading={"Contact"}>
@@ -73,7 +73,7 @@ export default function Investors() {
             <RadixLink
               size={"5"}
               target="_blank"
-              href="https://calendly.com/meshara-investor"
+              href="/path/to/pitch-deck.pdf"
               style={{ display: "flex", alignItems: "center", gap: "8px" }}
               asChild
             >

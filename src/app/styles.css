@@ -17,12 +17,21 @@ button {
     system-ui;
 }
 
+.main-header {
+}
+
 #tsparticles {
   position: fixed;
   top: 0;
   left: 0;
   width: 100dvw;
   height: 100dvh;
+}
+
+@media screen and (max-width: 992px) {
+  #team-grid {
+    grid-template-columns: 320px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -32,5 +41,9 @@ button {
 
   #mobile-dropdown {
     display: flex !important;
+  }
+
+  .main-heading {
+    font-size: 44px;
   }
 }

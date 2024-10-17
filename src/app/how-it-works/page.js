@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@radix-ui/themes";
+import { Text } from "@radix-ui/themes";
 import ButtonLink from "@/components/common/ButtonLink";
 import PageTransition from "@/components/common/PageTransition";
 import TextSection from "@/components/common/TextSection";
@@ -21,8 +21,8 @@ export default function HowItWorks() {
           Felis dolor tellus platea habitant duis non sapien efficitur. Lobortis
           vulputate nulla consequat posuere blandit cras suscipit.
         </Text>
-        <ButtonLink mt="4" href={"/investors"}>
-          For Investors
+        <ButtonLink mt="4" href={"/team"}>
+          Our Team
         </ButtonLink>
       </TextSection>
     </PageTransition>

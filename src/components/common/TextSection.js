@@ -8,8 +8,9 @@ export default function TextSection({ heading, children }) {
       justify={"center"}
       gap={"4"}
       style={{ flex: 1 }}
+      maxWidth={"640px"}
     >
-      <Heading size={"9"} align={"center"} mb={"2"}>
+      <Heading size={"9"} align={"center"} mb={"2"} className="main-heading">
         {heading}
       </Heading>
       <Flex direction={"column"} align={"center"} justify={"center"} gap={"5"}>

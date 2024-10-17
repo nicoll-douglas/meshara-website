@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
           <ParticlesBg />
           <Header />
           <Flex
-            maxWidth={"768px"}
             px={"4"}
             mt="65px"
             py={"64px"}
