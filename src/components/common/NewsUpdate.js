@@ -41,7 +41,7 @@ export default function NewsUpdate({
             <Text>{author}</Text>
             {
               // optional prop, e.g Founder, Sponsor etc
-              authorRole && <Badge highContrast={true}>Founder</Badge>
+              authorRole && <Badge highContrast={true}>{authorRole}</Badge>
             }
           </Flex>
         </Flex>
