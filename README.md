@@ -9,6 +9,6 @@ The website for Meshara, an up and coming startup.
 - Framer Motion
 - [tsParticles](https://github.com/tsparticles/tsparticles)
 
-## Hot It Looks
+## How It Looks
 
 ![Meshara Dark](proj/meshara-dark.gif)
