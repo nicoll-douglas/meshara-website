@@ -1,5 +1,7 @@
 # Meshara Website
 
+The website for Meshara, an up and coming startup.
+
 ## Technologies
 
 - NextJS
@@ -7,8 +9,6 @@
 - Framer Motion
 - [tsParticles](https://github.com/tsparticles/tsparticles)
 
-## Images
+## Hot It Looks
 
 ![Meshara Dark](proj/meshara-dark.gif)
-
-![Meshara Light](proj/meshara-light.gif)
