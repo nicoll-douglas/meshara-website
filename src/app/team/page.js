@@ -4,6 +4,10 @@ import ProfileCard from "@/components/common/ProfileCard";
 import profiles from "@/data/profiles";
 import ButtonLink from "@/components/common/ButtonLink";
 
+export const metadata = {
+  title: "Meshara | Our Team",
+};
+
 export default function MeetTheTeam() {
   return (
     <PageTransition>

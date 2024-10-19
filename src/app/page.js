@@ -4,6 +4,10 @@ import ButtonLink from "@/components/common/ButtonLink";
 import PageTransition from "@/components/common/PageTransition";
 import profiles from "@/data/profiles";
 
+export const metadata = {
+  title: "Meshara",
+};
+
 export default function Home() {
   const founder = profiles["0"];
   const profile2 = profiles["1"];

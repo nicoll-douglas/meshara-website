@@ -8,6 +8,10 @@ import {
 import PageTransition from "@/components/common/PageTransition";
 import email from "@/data/email";
 
+export const metadata = {
+  title: "Meshara | For Investors",
+};
+
 function ListSection({ heading, children }) {
   return (
     <Flex direction={"column"} align={"center"} justify={"center"} asChild>

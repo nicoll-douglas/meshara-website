@@ -3,6 +3,10 @@ import ButtonLink from "@/components/common/ButtonLink";
 import PageTransition from "@/components/common/PageTransition";
 import TextSection from "@/components/common/TextSection";
 
+export const metadata = {
+  title: "Meshara | About Us",
+};
+
 export default function About() {
   return (
     <PageTransition>

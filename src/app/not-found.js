@@ -2,6 +2,10 @@ import { Flex, Heading } from "@radix-ui/themes";
 import ButtonLink from "@/components/common/ButtonLink";
 import PageTransition from "@/components/common/PageTransition";
 
+export const metadata = {
+  title: "404 | Not Found",
+};
+
 export default function NotFound() {
   return (
     <PageTransition>
