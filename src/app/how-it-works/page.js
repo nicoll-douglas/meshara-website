@@ -10,7 +10,7 @@ export default function HowItWorks() {
         <Text size={"4"} align={"center"}>
           Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra viverra
           purus sapien pretium ullamcorper felis accumsan. In lacus ante
-          sagittis volutpat; diam pellentesque dictum habitasse maecenas
+          sagittis volutpat; diam pellentesque dictum habitasse maecenas.
         </Text>
         <Text size={"4"} align={"center"}>
           Massa ornare luctus scelerisque ridiculus suscipit phasellus purus

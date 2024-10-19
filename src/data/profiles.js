@@ -31,10 +31,11 @@ const profiles = {
     null, // avatar
     [new Social("https://www.linkedin.com", LinkedInLogoIcon, "LinkedIn")] // socials
   ),
+  // other profiles / team members
   1: new Profile(
     "John Doe",
-    null,
-    "Magna efficitur eget ultrices; cursus justo nunc taciti. Nunc suspendisse feugiat vehicula lectus parturient dictum enim integer. Efficitur maximus lorem nisi justo maecenas non fames.",
+    "Person 2",
+    "Magna efficitur eget ultrices; cursus justo nunc taciti. Nunc suspendisse feugiat vehicula lectus parturient dictum enim integer.",
     "https://placebear.com/200/200",
     [
       new Social("https://instagram.com", InstagramLogoIcon, "Instagram"),
@@ -44,7 +45,7 @@ const profiles = {
   ),
   2: new Profile(
     "Jane Doe",
-    null,
+    "Person 3",
     "Quam feugiat pellentesque aliquet molestie fames sapien. Pellentesque commodo mollis felis auctor elit natoque dignissim.",
     "https://placebear.com/250/250",
     []

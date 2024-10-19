@@ -6,22 +6,23 @@ export default function ProfileCard({ profile }) {
   return (
     <Card
       style={{
-        maxWidth: "380px",
+        maxWidth: "320px",
         minHeight: "380px",
         display: "flex",
         flexDirection: "column",
+        width: "100%",
+        height: "100%",
       }}
       size={"2"}
     >
       <Flex
         align={"center"}
         direction={"column"}
-        justify={"center"}
         height={"100%"}
         style={{ flex: 1 }}
       >
         <Avatar
-          mb={"3"}
+          my={"2"}
           size={"7"}
           aria-label={profile.name}
           src={profile.avatar}
@@ -33,7 +34,6 @@ export default function ProfileCard({ profile }) {
               .map((n) => n[0])
               .join("")
           }
-          mr={"2"}
         />
         <Text size={"6"}>{profile.name}</Text>
         {profile.role && (
@@ -41,11 +41,11 @@ export default function ProfileCard({ profile }) {
             {profile.role}
           </Badge>
         )}
-        <Text align={"center"} mt={"3"}>
+        <Text align={"center"} mt={"3"} mb={"4"}>
           {profile.bio}
         </Text>
         {profile.socials?.length > 0 && (
-          <Flex mt={"auto"} align={"center"} gap={"4"} asChild>
+          <Flex mt={"auto"} mb={"2"} align={"center"} gap={"4"} asChild>
             <ul style={{ listStyle: "none" }} aria-label="Links">
               {profile.socials.map(({ link, Logo, name }, index) => (
                 <li key={index}>
