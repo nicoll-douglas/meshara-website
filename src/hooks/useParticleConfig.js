@@ -21,7 +21,7 @@ export default function useParticleConfig() {
             mode: "push",
           },
           onHover: {
-            enable: true,
+            enable: true, // enable or disable particle hover events
             mode: "repulse",
           },
         },
@@ -60,7 +60,7 @@ export default function useParticleConfig() {
           density: {
             enable: true,
           },
-          value: 150,
+          value: 150, // number of particles
         },
         opacity: {
           value: 0.5,
