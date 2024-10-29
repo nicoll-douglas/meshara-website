@@ -47,6 +47,11 @@ export default function Investors() {
           For Investors
         </Heading>
         <ListSection heading={"Contact"}>
+            <Text size={"4"} align={"center"}>
+              We are currently in the pre-seed stages of our venture, and are looking for partners who share our vision of providing secure, low-cost access to essential services for everyone.
+              <br></br>
+              If you are interested in investing in Meshara or interested in a cooperation, please contact us at the email address below or book.
+            </Text>
           <li>
             <Text
               style={{ display: "flex", alignItems: "center", gap: "8px" }}

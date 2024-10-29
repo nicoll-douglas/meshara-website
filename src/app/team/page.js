@@ -29,9 +29,6 @@ export default function MeetTheTeam() {
             <li>
               <ProfileCard profile={profiles["1"]} />
             </li>
-            <li>
-              <ProfileCard profile={profiles["2"]} />
-            </li>
           </ul>
         </Grid>
         <ButtonLink href={"/investors"} mt="52px">
