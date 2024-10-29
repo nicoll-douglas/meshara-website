@@ -12,18 +12,8 @@ export default function HowItWorks() {
     <PageTransition>
       <TextSection heading={"How It Works"}>
         <Text size={"4"} align={"center"}>
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra viverra
-          purus sapien pretium ullamcorper felis accumsan. In lacus ante
-          sagittis volutpat; diam pellentesque dictum habitasse maecenas.
-        </Text>
-        <Text size={"4"} align={"center"}>
-          Massa ornare luctus scelerisque ridiculus suscipit phasellus purus
-          dignissim sollicitudin. Senectus dui magnis vel sit faucibus id
-          integer.
-        </Text>
-        <Text size={"4"} align={"center"}>
-          Felis dolor tellus platea habitant duis non sapien efficitur. Lobortis
-          vulputate nulla consequat posuere blandit cras suscipit.
+          This section is still under construction. Please check back later. 
+          For a preview of what we are working on, please contact us directly at hello@meshara.net .
         </Text>
         <ButtonLink mt="4" href={"/team"}>
           Our Team

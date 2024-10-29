@@ -26,17 +26,16 @@ class Social {
 const profiles = {
   0: new Profile(
     "Adrian Davies", // name
-    "Founder", // role
-    "Risus elit eros commodo; curabitur vivamus inceptos duis risus. Etiam mi proin litora gravida sed in tortor sapien est. Scelerisque pulvinar nascetur per amet sodales egestas.", // bio
-    null, // avatar
-    [new Social("https://www.linkedin.com", LinkedInLogoIcon, "LinkedIn")] // socials
+    "Founder & CEO", // role
+    "Background in tech and law, as well as previous founding experience.", // bio
+    "../img/adrian.jpg", // avatar
+    [new Social("https://www.linkedin.com/adriandav", LinkedInLogoIcon, "LinkedIn")] // socials
   ),
-  // other profiles / team members
   1: new Profile(
-    "John Doe",
-    "Person 2",
-    "Magna efficitur eget ultrices; cursus justo nunc taciti. Nunc suspendisse feugiat vehicula lectus parturient dictum enim integer.",
-    "https://placebear.com/200/200",
+    "Dani Daoud",
+    "Co-Founder & CTO",
+    "Background in tech, with a focus on embedded systems and IoT.",
+    "../img/dani.png",
     [
       new Social("https://instagram.com", InstagramLogoIcon, "Instagram"),
       new Social("https://www.linkedin.com", LinkedInLogoIcon, "LinkedIn"),

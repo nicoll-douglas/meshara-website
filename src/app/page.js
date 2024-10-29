@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Home() {
   const founder = profiles["0"];
-  const profile2 = profiles["1"];
+  const cofounder = profiles["1"];
   const profile3 = profiles["2"];
 
   return (
@@ -52,35 +52,11 @@ export default function Home() {
                       "Meshara revealed at Silicon Alps EBSCON4PIONEERS 2024"
                     }
                     text={
-                      "We're ecstatic to announce our participation at the Silicon Alps EBSCON4PIONEERS 2024 event. We will be  showcasing our latest developments in the field of financial inclusion and mesh network technology."
+                      "We're ecstatic to announce our participation at the Silicon Alps EBSCON4PIONEERS 2024 event. We will be showcasing our latest developments in the field of financial inclusion and mesh network technology."
                     }
                     date={"02.10.2024"}
                     link="https://example.com/read-more"
                     profile={founder}
-                  />
-                </li>
-                <li>
-                  <NewsUpdate
-                    title={
-                      "Duis aute irure dolor in reprehenderit in voluptate"
-                    }
-                    text={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    }
-                    date={"25.09.2024"}
-                    profile={profile2}
-                  />
-                </li>
-                <li>
-                  <NewsUpdate
-                    title={
-                      "Auctor scelerisque nunc inceptos congue volutpat mi odio"
-                    }
-                    text={
-                      "Sed orci duis senectus fames magna gravida; tempor venenatis. Adipiscing taciti vehicula montes; nulla taciti class. Metus vehicula odio laoreet volutpat felis fringilla hendrerit morbi. Sed donec velit diam class fringilla rutrum per velit."
-                    }
-                    date="18.09.24"
-                    profile={profile3}
                   />
                 </li>
               </ul>
