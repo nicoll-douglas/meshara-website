@@ -28,18 +28,24 @@ const profiles = {
     "Adrian Davies", // name
     "Founder & CEO", // role
     "Background in tech and law, as well as previous founding experience.", // bio
-    "../img/adrian.jpg", // avatar
-    [new Social("https://www.linkedin.com/adriandav", LinkedInLogoIcon, "LinkedIn")] // socials
+    "/avatars/adrian.jpg", // avatar
+    [
+      new Social(
+        "https://www.linkedin.com/adriandav",
+        LinkedInLogoIcon,
+        "LinkedIn"
+      ),
+    ] // socials
   ),
   1: new Profile(
     "Dani Daoud",
     "Co-Founder & CTO",
     "Background in tech, with a focus on embedded systems and IoT.",
-    "../img/dani.png",
+    "/avatars/dani.png",
     [
-      new Social("https://instagram.com", InstagramLogoIcon, "Instagram"),
-      new Social("https://www.linkedin.com", LinkedInLogoIcon, "LinkedIn"),
-      new Social("https://github.com", GitHubLogoIcon, "GitHub"),
+      // new Social("https://instagram.com", InstagramLogoIcon, "Instagram"),
+      // new Social("https://www.linkedin.com", LinkedInLogoIcon, "LinkedIn"),
+      // new Social("https://github.com", GitHubLogoIcon, "GitHub"),
     ]
   ),
   2: new Profile(
