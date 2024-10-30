@@ -55,7 +55,7 @@ export default function Home() {
                       "We're ecstatic to announce our participation at the Silicon Alps EBSCON4PIONEERS 2024 event. We will be showcasing our latest developments in the field of financial inclusion and mesh network technology."
                     }
                     date={"02.10.2024"}
-                    link="https://example.com/read-more"
+                    // link="https://example.com/read-more"
                     profile={founder}
                   />
                 </li>

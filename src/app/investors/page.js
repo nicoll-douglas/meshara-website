@@ -1,12 +1,13 @@
-import Link from "next/link";
-import { Flex, Heading, Text, Link as RadixLink } from "@radix-ui/themes";
+// import Link from "next/link";
+import { Flex, Heading, Text, Link as RadixLink, Box } from "@radix-ui/themes";
 import {
   EnvelopeClosedIcon,
   CalendarIcon,
-  FileTextIcon,
+  // FileTextIcon,
 } from "@radix-ui/react-icons";
 import PageTransition from "@/components/common/PageTransition";
 import email from "@/data/email";
+import TextSection from "@/components/common/TextSection";
 
 export const metadata = {
   title: "Meshara | For Investors",
@@ -43,15 +44,23 @@ export default function Investors() {
         gap={"9"}
         style={{ flex: 1 }}
       >
-        <Heading size={"9"} align={"center"} className="main-heading">
-          For Investors
-        </Heading>
-        <ListSection heading={"Contact"}>
+        <Box>
+          <Heading size={"9"} align={"center"} className="main-heading">
+            For Investors
+          </Heading>
+          <TextSection>
             <Text size={"4"} align={"center"}>
-              We are currently in the pre-seed stages of our venture, and are looking for partners who share our vision of providing secure, low-cost access to essential services for everyone.
-              <br></br>
-              If you are interested in investing in Meshara or interested in a cooperation, please contact us at the email address below or book.
+              We are currently in the pre-seed stages of our venture, and are
+              looking for partners who share our vision of providing secure,
+              low-cost access to essential services for everyone.
             </Text>
+            <Text size={"4"} align={"center"}>
+              If you are interested in investing in Meshara or interested in a
+              cooperation, please contact us at the email address below or book.
+            </Text>
+          </TextSection>
+        </Box>
+        <ListSection heading={"Contact"}>
           <li>
             <Text
               style={{ display: "flex", alignItems: "center", gap: "8px" }}
@@ -77,7 +86,7 @@ export default function Investors() {
             </RadixLink>
           </li>
         </ListSection>
-        <ListSection heading={"Resources"}>
+        {/* <ListSection heading={"Resources"}>
           <li>
             <RadixLink
               size={"5"}
@@ -96,7 +105,7 @@ export default function Investors() {
               </Link>
             </RadixLink>
           </li>
-        </ListSection>
+        </ListSection> */}
       </Flex>
     </PageTransition>
   );

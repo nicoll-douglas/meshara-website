@@ -12,8 +12,9 @@ export default function HowItWorks() {
     <PageTransition>
       <TextSection heading={"How It Works"}>
         <Text size={"4"} align={"center"}>
-          This section is still under construction. Please check back later. 
-          For a preview of what we are working on, please contact us directly at hello@meshara.net .
+          This section is still under construction. Please check back later. For
+          a preview of what we are working on, please contact us directly at
+          hello@meshara.net.
         </Text>
         <ButtonLink mt="4" href={"/team"}>
           Our Team

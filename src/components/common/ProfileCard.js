@@ -6,8 +6,8 @@ export default function ProfileCard({ profile }) {
   return (
     <Card
       style={{
-        maxWidth: "320px",
-        minHeight: "380px",
+        maxWidth: "300px",
+        minHeight: "320px",
         display: "flex",
         flexDirection: "column",
         width: "100%",
@@ -37,7 +37,7 @@ export default function ProfileCard({ profile }) {
         />
         <Text size={"6"}>{profile.name}</Text>
         {profile.role && (
-          <Badge mt={"1"} size={"3"} highContrast={true}>
+          <Badge mt={"1"} size={"2"} highContrast={true}>
             {profile.role}
           </Badge>
         )}

@@ -53,7 +53,7 @@ export default function useParticleConfig() {
             default: "bounce",
           },
           random: false,
-          speed: 1.75,
+          speed: 1.25,
           straight: false,
         },
         number: {

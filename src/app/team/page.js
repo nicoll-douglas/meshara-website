@@ -16,7 +16,6 @@ export default function MeetTheTeam() {
         align={"center"}
         justify={"center"}
         width={"100%"}
-        mt={"64px"}
       >
         <Heading size={"9"} align={"center"} mb="6" className="main-heading">
           Our Team

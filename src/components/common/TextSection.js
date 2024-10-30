@@ -13,7 +13,7 @@ export default function TextSection({ heading, children }) {
       <Heading size={"9"} align={"center"} mb={"2"} className="main-heading">
         {heading}
       </Heading>
-      <Flex direction={"column"} align={"center"} justify={"center"} gap={"5"}>
+      <Flex direction={"column"} align={"center"} justify={"center"} gap={"4"}>
         {children}
       </Flex>
     </Flex>
