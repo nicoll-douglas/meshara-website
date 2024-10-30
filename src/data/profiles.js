@@ -31,7 +31,7 @@ const profiles = {
     "/avatars/adrian.jpg", // avatar
     [
       new Social(
-        "https://www.linkedin.com/adriandav",
+        "https://www.linkedin.com/in/adriandav",
         LinkedInLogoIcon,
         "LinkedIn"
       ),
