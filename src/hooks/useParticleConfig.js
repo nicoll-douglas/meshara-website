@@ -21,7 +21,7 @@ export default function useParticleConfig() {
             mode: "push",
           },
           onHover: {
-            enable: true, // enable or disable particle hover events
+            enable: false, // enable or disable particle hover events
             mode: "repulse",
           },
         },
