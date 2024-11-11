@@ -33,7 +33,7 @@ export default function Home() {
         >
           <Heading size={"9"}>Meshara</Heading>
           <Text size={"6"} align={"center"}>
-            Financial inclusion by connection.
+            Inclusion by connection.
           </Text>
           <ButtonLink href={"/about"} mt="4">
             About Us

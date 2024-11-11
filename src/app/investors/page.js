@@ -50,14 +50,12 @@ export default function Investors() {
           </Heading>
           <TextSection>
             <Text size={"4"} align={"center"}>
-              We are currently in the pre-seed stages of our venture, and are
-              looking for partners who share our vision of providing secure,
-              low-cost access to essential services for everyone.
+              At Meshara, we’re in the pre-seed stage and seeking visionary partners who share our commitment to connecting underserved regions through secure, low-cost access to essential services. Your investment will help us grow a sustainable, decentralized network that meets critical needs in real time, from disaster response to everyday financial transactions.
             </Text>
             <Text size={"4"} align={"center"}>
-              If you are interested in investing in Meshara or interested in a
-              cooperation, please contact us at the email address below or book.
-            </Text>
+              By investing in Meshara, you’re joining a pioneering journey that addresses real-world problems with tangible impacts. We welcome conversations with investors interested in shaping the future of inclusive connectivity.
+              <b> Contact us at <RadixLink href="mailto:hello@meshara.net">{email}</RadixLink> or schedule a call to
+                learn more about opportunities to support our mission. </b> </Text>
           </TextSection>
         </Box>
         <ListSection heading={"Contact"}>

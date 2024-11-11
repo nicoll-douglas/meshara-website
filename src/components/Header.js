@@ -30,6 +30,7 @@ export default function Header() {
                     How It Works
                   </InternalLink>
                   <InternalLink href={"/team"}>Our Team</InternalLink>
+                  <InternalLink href="/partnerships">Partnerships</InternalLink>
                   <InternalLink href="/investors">For Investors</InternalLink>
                 </nav>
               </Flex>

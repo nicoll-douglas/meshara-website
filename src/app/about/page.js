@@ -10,28 +10,22 @@ export const metadata = {
 
 export default function About() {
   return (
-    <PageTransition>
-      <TextSection heading={"About Us"}>
-        <Text size={"4"} align={"center"}>
-          Meshara provides secure, low-cost, and scalable access to essential services for
-          underserved communities using decentralized, off-grid mesh technologies.
-        </Text>
-        <Text size={"4"} align={"center"}>
-          Meshara connects people in remote and conflict-affected regions and provides them with a suite of essential services (eg. Emergency Communication, Financial Transactions, Disaster Warning,...), 
-          promoting inclusion, reducing transaction costs, and enhancing security.
-        </Text>
-        <Text size={"4"} align={"center"}>
-          Our mission is to empower individuals and businesses by bringing
-          reliable, affordable financial access where it&apos;s needed most.
-        </Text>
-        <DividerHorizontalIcon></DividerHorizontalIcon>
-        <Text size={"4"} align={"center"}>
-          In comparison to traditional mesh networks, that often have issues with scaling, security, or pricing, Meshara is deployable nationwide, only costing 6-figure-sums (instead of 9 figures in traditional networking) and is secure as well as very fault tolerable.
-        </Text>
-        <ButtonLink mt="4" href={"/how-it-works"}>
-          How It Works
-        </ButtonLink>
-      </TextSection>
-    </PageTransition>
+      <PageTransition>
+        <TextSection heading={"About Us"}>
+          <Text size={"4"} align={"center"}>
+            Meshara is pioneering affordable, secure, and scalable access to essential services for underserved communities. Using decentralized, off-grid mesh technology, Meshara connects individuals in remote and conflict-affected areas to vital services, empowering them with tools for inclusion, security, and resilience.
+          </Text>
+          <Text size={"4"} align={"center"}>
+            Our suite of services spans emergency communication, financial transactions, and disaster warnings, among others. Our mission is to foster inclusion, reduce transaction costs, and elevate security for individuals and businesses.
+          </Text>
+          <Text size={"4"} align={"center"}>
+            Why Meshara? Unlike traditional networks with high costs and scaling challenges, Meshara offers a flexible, fault-tolerant solution at a fraction of the cost. Nationwide deployments can be achieved for six-figure sums, creating a viable alternative to traditional multi-million-dollar infrastructure investments.
+          </Text>
+          <DividerHorizontalIcon></DividerHorizontalIcon>
+          <ButtonLink mt="4" href={"/how-it-works"}>
+            How It Works
+          </ButtonLink>
+        </TextSection>
+      </PageTransition>
   );
 }
